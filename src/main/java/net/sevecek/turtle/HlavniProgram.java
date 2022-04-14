@@ -5,15 +5,64 @@ import net.sevecek.turtle.engine.*;
 public class HlavniProgram {
         Turtle zofka;
 
+
     public void main(String[] args) {
 
         zofka = new Turtle();
+
         posunZofkyDoStreduPole();
         nakresliPrasatko();
 
+        zofka.penUp();
+        zofka.move(300);
+        zofka.penDown();
+
+        nakresliOsmiuhelnik();
+
+        zofka.turnLeft(90);
+        zofka.penUp();
+        zofka.move(200);
+        zofka.penDown();
+        zofka.turnRight(90);
+
+        nakresliKolecko();
+
+        zofka.turnLeft(90);
+        zofka.penUp();
+        zofka.move(200);
+        zofka.penDown();
+        zofka.turnRight(90);
+
+        nakresliSlunicko();
     }
 
-    private void posunZofkyDoStreduPole() {
+    public void nakresliSlunicko() {
+        for (int i = 0; i < 20; i++) {
+            zofka.move(18);
+            zofka.turnRight(90);
+            zofka.move(10);
+            zofka.turnLeft(180);
+            zofka.move(10);
+            zofka.turnRight(90);
+            zofka.turnLeft(18);
+        }
+    }
+
+    public void nakresliKolecko() {
+        for (int i = 0; i < 20; i++) {
+            zofka.move(18);
+            zofka.turnLeft(18);
+        }
+    }
+
+    public void nakresliOsmiuhelnik() {
+        for (int i = 0; i < 8; i++) {
+            zofka.move(40);
+            zofka.turnLeft(45);
+        }
+    }
+
+    public void posunZofkyDoStreduPole() {
         zofka.turnLeft(180);
         zofka.penUp();
         zofka.move(150);
@@ -23,7 +72,7 @@ public class HlavniProgram {
         zofka.penDown();
     }
 
-    private void nakresliPrasatko() {
+    public void nakresliPrasatko() {
         nakresliNozicky();
         zofka.turnRight(90);
         zofka.penUp();
@@ -43,7 +92,7 @@ public class HlavniProgram {
         zofka.turnLeft(90);
     }
 
-    private void nakresliNozicky() {
+    public void nakresliNozicky() {
         for (int i = 0; i < 2; i++) {
             zofka.turnLeft(30);
             zofka.move(20);
@@ -57,7 +106,7 @@ public class HlavniProgram {
         }
     }
 
-    private void nakresliObdelnik() {
+    public void nakresliObdelnik() {
         for (int i = 0; i < 2; i++) {
             zofka.move(50);
             zofka.turnLeft(90);
@@ -66,7 +115,7 @@ public class HlavniProgram {
         }
     }
 
-    private void nakresliTrojuhelnik() {
+    public void nakresliTrojuhelnik() {
         zofka.turnLeft(30);
         zofka.move(50);
         zofka.turnLeft(120);
