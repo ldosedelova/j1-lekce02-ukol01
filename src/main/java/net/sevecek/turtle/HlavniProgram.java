@@ -79,7 +79,7 @@ public class HlavniProgram {
         zofka.setPenColor(modraBarva);
         zofka.move(80);
         zofka.turnRight(153.435);
-        zofka.move(89.443);//80
+        zofka.move(89.443);
         zofka.turnLeft(153.435);
         zofka.move(80);
         zofka.turnRight(180);
@@ -159,11 +159,11 @@ public class HlavniProgram {
         nakresliObdelnik();
         zofka.move(50);
         zofka.turnLeft(90);
-        zofka.move(80);//100
+        zofka.move(80);
         zofka.setPenColor(cervenaBarva);
         nakresliTrojuhelnik();
         zofka.setPenColor(cernaBarva);
-        zofka.move(80);//100
+        zofka.move(80);
         zofka.turnLeft(90);
         zofka.move(50);
     }
@@ -171,11 +171,11 @@ public class HlavniProgram {
     public void nakresliSlunicko() {
         zofka.setPenColor(zlutaBarva);
         for (int i = 0; i < 20; i++) {
-            zofka.move(10);//18
+            zofka.move(10);
             zofka.turnRight(90);
-            zofka.move(8);//10
+            zofka.move(8);
             zofka.turnLeft(180);
-            zofka.move(8);//10
+            zofka.move(8);
             zofka.turnRight(90);
             zofka.turnLeft(18);
         }
@@ -200,7 +200,7 @@ public class HlavniProgram {
         nakresliNozicky();
         zofka.turnRight(90);
         zofka.penUp();
-        zofka.move(150);//190
+        zofka.move(150);
         zofka.turnLeft(90);
         zofka.move(20);
         zofka.penDown();
@@ -209,10 +209,10 @@ public class HlavniProgram {
 
         zofka.move(50);
         zofka.turnLeft(90);
-        zofka.move(80);//100
+        zofka.move(80);
 
         nakresliTrojuhelnik();
-        zofka.move(80);//100
+        zofka.move(80);
         zofka.turnLeft(90);
     }
 
@@ -224,7 +224,7 @@ public class HlavniProgram {
             zofka.move(20);
             zofka.turnRight(60);
             zofka.penUp();
-            zofka.move(60);//80
+            zofka.move(60);
             zofka.penDown();
             zofka.turnRight(90);
         }
@@ -234,7 +234,7 @@ public class HlavniProgram {
         for (int i = 0; i < 2; i++) {
             zofka.move(50);
             zofka.turnLeft(90);
-            zofka.move(80);//100
+            zofka.move(80);
             zofka.turnLeft(90);
         }
     }
